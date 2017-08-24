@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+            <Button Name="Button1" Click="Button1_OnClick" Content="开始"></Button>
+            <Button Grid.Row="1" Name="Button2" Click="Button2_OnClick" Content="停止"></Button>
     </Grid>
 </Window>
